@@ -1,9 +1,7 @@
 {
-  "name": "vue-admin-template",
-  "version": "3.8.0",
-  "license": "MIT",
+  "name": "maintenance_ui",
   "description": "A vue admin template with Element UI & axios & iconfont & permission control & lint",
-  "author": "Pan <panfree23@gmail.com>",
+  "author": "ding <denjayandy@gmail.com>",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -20,6 +18,7 @@
     "normalize.css": "7.0.0",
     "nprogress": "0.2.0",
     "vue": "2.5.17",
+    "vue-i18n": "^8.2.1",
     "vue-router": "3.0.1",
     "vuex": "3.0.1"
   },
