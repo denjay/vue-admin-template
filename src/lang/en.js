@@ -15,7 +15,6 @@ export default {
     jsonEditor: 'JSON Editor',
     dndList: 'Dnd List',
     splitPane: 'SplitPane',
-    avatarUpload: 'Avatar Upload',
     dropzone: 'Dropzone',
     sticky: 'Sticky',
     countTo: 'CountTo',

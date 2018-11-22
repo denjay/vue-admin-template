@@ -53,6 +53,7 @@ export const constantRouterMap = [{
 export const asyncRouterMap = [{
   path: '/example',
   component: Layout,
+  alwaysShow: true,
   redirect: '/example/table',
   name: 'Example',
   meta: {

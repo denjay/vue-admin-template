@@ -15,7 +15,6 @@ export default {
     jsonEditor: 'Editor JSON',
     dndList: 'Lista Dnd',
     splitPane: 'Panel dividido',
-    avatarUpload: 'Subir avatar',
     dropzone: 'Subir ficheros',
     sticky: 'Sticky',
     countTo: 'CountTo',

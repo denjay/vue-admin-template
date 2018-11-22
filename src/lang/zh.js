@@ -15,7 +15,6 @@ export default {
     jsonEditor: 'JSON编辑器',
     dndList: '列表拖拽',
     splitPane: 'Splitpane',
-    avatarUpload: '头像上传',
     dropzone: 'Dropzone',
     sticky: 'Sticky',
     countTo: 'CountTo',
