@@ -1,16 +1,5 @@
 import request from '@/utils/request'
 
-// export function login(username, password) {
-//   return request({
-//     url: '/user/login',
-//     method: 'post',
-//     data: {
-//       username,
-//       password
-//     }
-//   })
-// }
-
 export function getPermissions() {
   return request({
     url: '/kong/rightmanage/v1.0/cur-permissions?systemname=RepairSystemWeb',
