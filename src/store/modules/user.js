@@ -1,10 +1,10 @@
 import { logout, getPermissions, isSuper } from '@/api/login'
-import { getToken, removeToken } from '@/utils/auth'
+import { getToken, removeToken, getName } from '@/utils/auth'
 
 const user = {
   state: {
     token: getToken(),
-    name: '',
+    name: getName(),
     permissions: null,
     isSuper: false
   },
@@ -14,7 +14,7 @@ const user = {
       state.token = token
     },
     SET_NAME: (state) => {
-      state.name = window.Auth.username()
+      state.name = getName()
     },
     SET_PERMISSIONS: (state, permissions) => {
       state.permissions = permissions
@@ -58,7 +58,7 @@ const user = {
     // 登出
     LogOut({ commit, state }) {
       return new Promise((resolve, reject) => {
-        logout(state.token).then(() => {
+        logout().then(() => {
           commit('SET_TOKEN', '')
           commit('SET_PERMISSIONS', [])
           removeToken()

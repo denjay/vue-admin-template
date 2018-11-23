@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { Message } from 'element-ui'
 import store from '../store'
-import { getToken } from '@/utils/auth'
 
 // 创建axios实例
 const service = axios.create({
@@ -13,7 +12,7 @@ const service = axios.create({
 service.interceptors.request.use(
   config => {
     if (store.getters.token) {
-      config.headers['sessionid'] = getToken() // 让每个请求携带自定义token 请根据实际情况自行修改
+      config.headers['Authorization'] = `Bearer ${store.getters.token}` // 让每个请求头携带jwt验证token
     }
     return config
   },
