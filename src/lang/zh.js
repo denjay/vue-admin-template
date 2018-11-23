@@ -1,6 +1,6 @@
 export default {
   route: {
-    dashboard: '首页',
+    home: '首页',
     introduction: '简述',
     documentation: '文档',
     guide: '引导页',
@@ -61,11 +61,15 @@ export default {
     theme: '换肤',
     clipboardDemo: 'Clipboard',
     i18n: '国际化',
-    externalLink: '外链'
+    externalLink: '外链',
+    rightManage: '权限管理',
+    userRights: '用户权限',
+    roleRights: '角色权限',
+    changePassword: '修改密码'
   },
   navbar: {
     logOut: '退出登录',
-    dashboard: '首页',
+    home: '首页',
     github: '项目地址',
     screenfull: '全屏',
     theme: '换肤',

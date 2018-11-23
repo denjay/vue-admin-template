@@ -1,6 +1,6 @@
 export default {
   route: {
-    dashboard: 'Panel de control',
+    home: 'Inicio',
     introduction: 'Introducción',
     documentation: 'Documentación',
     guide: 'Guía',
@@ -61,11 +61,15 @@ export default {
     theme: 'Tema',
     clipboardDemo: 'Clipboard',
     i18n: 'I18n',
-    externalLink: 'Enlace externo'
+    externalLink: 'Enlace externo',
+    rightManage: 'Gestion de derechos',
+    userRights: 'Derechos de usuario',
+    roleRights: 'Permisos de rol',
+    changePassword: 'Cambiar contraseña'
   },
   navbar: {
     logOut: 'Salir',
-    dashboard: 'Panel de control',
+    home: 'Inicio',
     github: 'Github',
     screenfull: 'Pantalla completa',
     theme: 'Tema',

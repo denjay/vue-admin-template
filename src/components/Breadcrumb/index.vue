@@ -36,8 +36,8 @@ export default {
         }
       })
       const first = matched[0]
-      if (first && first.name.trim().toLocaleLowerCase() !== 'Dashboard'.toLocaleLowerCase()) {
-        matched = [{ path: '/dashboard', meta: { title: 'dashboard' }}].concat(matched)
+      if (first && first.name.trim().toLocaleLowerCase() !== 'index'.toLocaleLowerCase()) {
+        matched = [{ path: '/index', meta: { title: 'home' }}].concat(matched)
       }
       this.levelList = matched
     },

@@ -1,6 +1,6 @@
 <template>
-  <div class="dashboard-container">
-    <div class="dashboard-text">name:{{ name }}</div>
+  <div class="index-container">
+    <div class="index-text">name:{{ name }}</div>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  name: 'Dashboard',
+  name: 'Index',
   computed: {
     ...mapGetters([
       'name'
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
-.dashboard {
+.index {
   &-container {
     margin: 30px;
   }
