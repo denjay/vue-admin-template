@@ -65,7 +65,7 @@ export default {
     rightManage: 'Right Manage',
     userRights: 'User Rights',
     roleRights: 'Role Rights',
-    changePassword: 'Change Password'
+    changePassword: 'Password'
   },
   navbar: {
     logOut: 'Log Out',
