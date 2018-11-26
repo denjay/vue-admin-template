@@ -10,3 +10,11 @@ export function generateTitle(title) {
   }
   return title
 }
+
+export function getLanguage() {
+  return window.localStorage.getItem('language')
+}
+
+export function setLanguage(language) {
+  return window.localStorage.setItem('language', language)
+}

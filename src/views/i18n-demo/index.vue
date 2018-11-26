@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import { setLanguage } from '@/utils/i18n'
 import local from './local'
 const viewName = 'i18nView'
 
@@ -36,7 +37,7 @@ export default {
       },
       set(lang) {
         this.$i18n.locale = lang
-        this.$store.dispatch('setLanguage', lang)
+        setLanguage(lang)
       }
     }
   },
@@ -79,10 +80,6 @@ export default {
   width: 600px;
   max-width: 100%;
   margin: 20px auto;
-}
-.item-btn{
-  margin-bottom: 15px;
-  margin-left: 0px;
 }
 .block {
   padding: 25px;
