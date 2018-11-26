@@ -26,8 +26,7 @@ export default {
   name: 'I18n',
   data() {
     return {
-      date: '',
-      options: []
+      date: ''
     }
   },
   computed: {
@@ -41,35 +40,11 @@ export default {
       }
     }
   },
-  watch: {
-    lang() {
-      this.setOptions()
-    }
-  },
   created() {
     if (!this.$i18n.getLocaleMessage('en')[viewName]) {
       this.$i18n.mergeLocaleMessage('en', local.en)
       this.$i18n.mergeLocaleMessage('zh', local.zh)
       this.$i18n.mergeLocaleMessage('es', local.es)
-    }
-    this.setOptions() // set default select options
-  },
-  methods: {
-    setOptions() {
-      this.options = [
-        {
-          value: '1',
-          label: this.$t('i18nView.one')
-        },
-        {
-          value: '2',
-          label: this.$t('i18nView.two')
-        },
-        {
-          value: '3',
-          label: this.$t('i18nView.three')
-        }
-      ]
     }
   }
 }
