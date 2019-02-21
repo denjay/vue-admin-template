@@ -7,6 +7,9 @@ import { asyncRouterMap, constantRouterMap } from '@/router'
  */
 function hasPermission(permissions, route) {
   if (route.meta && route.meta.permissions) {
+    if (route.meta.permissions.length === 0) {
+      return true
+    }
     return route.meta.permissions.some(permission => { return (permission in permissions) && (permissions[permission].ops.includes('view')) })
   } else {
     return true
@@ -54,7 +57,6 @@ const permission = {
           accessedRouters = asyncRouterMap
         } else {
           accessedRouters = filterAsyncRouter(asyncRouterMap, permissions)
-          console.log('accessedRouters:', accessedRouters)
         }
         commit('SET_ROUTERS', accessedRouters)
         resolve()

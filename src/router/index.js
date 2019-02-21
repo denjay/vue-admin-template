@@ -19,7 +19,7 @@ import Layout from '../views/layout/Layout'
 * meta : {
     title: 'title'                          the name show in submenu and breadcrumb (recommend set)
     icon: 'svg-name'                        the icon show in the sidebar,
-    permissions： ['permission-name']       the permissions required for this route
+    permissions： ['permission-name']       the permissions required for this route(如果不存在permissions属性，或者该属性为空列表，表示无权限限制)
   }
 **/
 export const constantRouterMap = [
